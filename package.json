@@ -1,0 +1,28 @@
+{
+  "name": "PlatziVerseAPI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "DEBUG=platziverse:* ava test/api-test.js",
+    "start": "DEBUG=platziverse:* node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.0",
+    "express-jwt-permissions": "^1.0.0",
+    "jsonwebtoken": "^7.4.2",
+    "platziversedb": "file:../PlatziVerseDB"
+  },
+  "devDependencies": {
+    "ava": "^3.11.0",
+    "proxyquire": "^2.1.3",
+    "sinon": "^9.0.2",
+    "supertest": "^4.0.2"
+  }
+}
